@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arduino controller with Socket.IO</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div></div>
+    <header class="animated">
+      <img src="img/logoArduino.png" alt="Logo Arduino" class="animated">
+      <h1 class="animated">Arduino/Web controler</h1>
+    </header>
+
+    <main class="animated">
+        <ul>
+          <li>
+            <div class="animated" id="greenDiv">
+              <div class="rotatedImg" id="greenBtn">
+                <img class="animated" src="img/greenBtn.png" alt="Bouton vert"  data="green">
+              </div>
+              <img class="animated" src="img/backgroundBtnGreen.png" alt="Fond">
+            </div>
+            <p class="animated">Led verte <span>désactivée</span></p>
+          </li>
+
+          <li>
+            <div class="animated" id="yellowDiv">
+              <div class="rotatedImg" id="yellowBtn">
+                <img class="animated" src="img/yellowBtn.png" alt="Bouton jaune" data="yellow">
+              </div>
+              <img class="animated" src="img/backgroundBtnYellow.png" alt="Fond">
+            </div>
+            <p class="animated">Led jaune <span>désactivée</span></p>
+          </li>
+
+          <li>
+            <div class="animated" id="redDiv">
+              <div class="rotatedImg" id="redBtn">
+                <img class="animated" src="img/redBtn.png" alt="Bouton rouge" data="red">
+              </div>
+              <img class="animated" src="img/backgroundBtnRed.png" alt="Fond">
+            </div>
+            <p class="animated">Led rouge <span>désactivée</span></p>
+          </li>
+        </ul>
+
+        <form action="">
+          <label for="finalAnswer">Quelle est la réponse à la grande question sur la vie, l'univers et le reste ?</label>
+          <input type="text" id="finalAnswer" name="finalAnswer">
+          <button type="submit">Répondre</button>
+        </form>
+    </main>
+
+    <footer class="animated">
+      <p>Under MIT Licence = Developed by <a href="http://digitalworkshop.fr" target="_blank">Julien Noyer</a></p>
+    </footer>
+
+    <aside id="endScreen">
+      <div>
+        <img src="img/oops.gif" alt="Oups..." class="animated">
+        <p class="animated">You already know everything, <span>I need to restart...</span></p>
+      </div>
+    </aside>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

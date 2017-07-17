@@ -1,0 +1,32 @@
+{
+  "name": "meanduino-controller",
+  "version": "1.0.0",
+  "description": "Exploration du MEAN stack avec JohnniFive et Adruino. Mise en place d'un serveur NodeJS & ExpressJS avec une vue en HTML/CSS/JS controlée par une board Arduino UNO. La liste complète des composants utilisés est indiquée dans le fichier README.md.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DWS-paris/MEANduino-ctrl.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "arduino"
+  ],
+  "author": "Julien Noyer / DigitalWorkshop.fr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DWS-paris/MEANduino-ctrl/issues"
+  },
+  "homepage": "https://github.com/DWS-paris/MEANduino-ctrl#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "johnny-five": "^0.11.3",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.3"
+  }
+}
